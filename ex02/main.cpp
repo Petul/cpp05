@@ -6,7 +6,7 @@
 /*   By: pleander <pleander@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 21:06:09 by pleander          #+#    #+#             */
-/*   Updated: 2025/01/16 21:04:27 by pleander         ###   ########.fr       */
+/*   Updated: 2025/01/16 21:11:32 by pleander         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,21 @@ int main(void)
 		ShrubberyCreationForm f("home");
 		joe.sign_form(f);
 		joe.executeForm(f);
+	}
+
+	{
+		Bureaucrat sam("Sam", 146);
+
+		ShrubberyCreationForm f("home");
+		sam.sign_form(f);
+		sam.executeForm(f);
+	}
+
+	{
+		Bureaucrat bob("Bob", 138);
+
+		ShrubberyCreationForm f("home");
+		bob.sign_form(f);
+		bob.executeForm(f);
 	}
 }
