@@ -74,6 +74,24 @@ int main(void)
 		Bureaucrat foo("Joe", 1);
 
 		Form sleeping_permit("Sleeping permit", 100, 10);
+		std::cout << sleeping_permit << std::endl;
+		foo.sign_form(sleeping_permit);
+		std::cout << sleeping_permit << std::endl;
+	}
+
+	{
+		Bureaucrat foo("Mike", 50);
+
+		Form sleeping_permit("Sleeping permit", 50, 10);
+		std::cout << sleeping_permit << std::endl;
+		foo.sign_form(sleeping_permit);
+		std::cout << sleeping_permit << std::endl;
+	}
+	{
+		Bureaucrat foo("Jason", 51);
+
+		Form sleeping_permit("Sleeping permit", 50, 10);
+		std::cout << sleeping_permit << std::endl;
 		foo.sign_form(sleeping_permit);
 		std::cout << sleeping_permit << std::endl;
 	}
