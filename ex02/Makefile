@@ -6,14 +6,14 @@
 #    By: pleander <pleander@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/15 21:07:26 by pleander          #+#    #+#              #
-#    Updated: 2025/01/16 21:07:48 by pleander         ###   ########.fr        #
+#    Updated: 2025/01/16 21:24:49 by pleander         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := AForm
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++11
-SOURCES := main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp
+SOURCES := main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp
 
 OBJECTS := $(SOURCES:.cpp=.o)
 

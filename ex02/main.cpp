@@ -6,7 +6,7 @@
 /*   By: pleander <pleander@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 21:06:09 by pleander          #+#    #+#             */
-/*   Updated: 2025/01/16 21:11:32 by pleander         ###   ########.fr       */
+/*   Updated: 2025/01/16 21:25:10 by pleander         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <iostream>
 
 #include "Bureaucrat.hpp"
+#include "RobotomyRequestForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 
 int main(void)
@@ -40,5 +41,12 @@ int main(void)
 		ShrubberyCreationForm f("home");
 		bob.sign_form(f);
 		bob.executeForm(f);
+	}
+	{
+		Bureaucrat foo("Foo", 40);
+
+		RobotomyRequestForm f("Joe");
+		foo.sign_form(f);
+		foo.executeForm(f);
 	}
 }
