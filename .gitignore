@@ -1,3 +1,5 @@
 *.o
 Bureaucrat
 Form
+*_shrubbery
+AForm
