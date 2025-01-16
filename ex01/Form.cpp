@@ -108,6 +108,6 @@ std::ostream& operator<<(std::ostream& out, const Form& f)
 	out << "Form name: " << f.get_name()
 	    << "\nGrade to sign: " << f.get_grade_to_sign()
 	    << "\nGrade to execute: " << f.get_grade_to_execute()
-	    << "\nIs signed: " << f.get_signed() << std::endl;
+	    << "\nIs signed: " << f.get_signed();
 	return (out);
 }
