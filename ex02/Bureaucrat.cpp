@@ -6,7 +6,7 @@
 /*   By: pleander <pleander@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 20:00:29 by pleander          #+#    #+#             */
-/*   Updated: 2025/01/16 21:02:14 by pleander         ###   ########.fr       */
+/*   Updated: 2025/01/16 21:12:06 by pleander         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,12 +105,12 @@ void Bureaucrat::executeForm(AForm const& f)
 	}
 	catch (AForm::FormNotSignedException&)
 	{
-		std::cout << this->name_ << " couldn't sign form " << f.get_name()
+		std::cout << this->name_ << " couldn't execute form " << f.get_name()
 		          << " becuase the form is not signed." << std::endl;
 	}
 	catch (AForm::GradeTooLowException&)
 	{
-		std::cout << this->name_ << " couldn't sign form " << f.get_name()
+		std::cout << this->name_ << " couldn't execute form " << f.get_name()
 		          << " becuase its grade is too low." << std::endl;
 	}
 }
