@@ -48,6 +48,7 @@ void ShrubberyCreationForm::execute(Bureaucrat const& executor) const
 {
 	CheckIfExecutionPossible(executor);
 	std::ofstream of{this->target_ + "_shrubbery"};
+	of.exceptions(std::ifstream::failbit);
 	for (int i = 0; i < 5; i++)
 	{
 		of << "    #    \n"
