@@ -12,7 +12,6 @@
 
 #include "Bureaucrat.hpp"
 
-#include <exception>
 #include <iostream>
 #include <string>
 
@@ -86,8 +85,7 @@ void Bureaucrat::signForm(Form& f)
 	try
 	{
 		f.beSigned(*this);
-		std::cout << this->name_ << " signed form " << f.getName()
-		          << std::endl;
+		std::cout << this->name_ << " signed form " << f.getName() << std::endl;
 	}
 	catch (Form::GradeTooLowException&)
 	{
