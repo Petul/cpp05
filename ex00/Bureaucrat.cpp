@@ -50,17 +50,17 @@ Bureaucrat::~Bureaucrat()
 {
 }
 
-std::string Bureaucrat::get_name() const
+std::string Bureaucrat::getName() const
 {
 	return (this->name_);
 }
 
-int Bureaucrat::get_grade() const
+int Bureaucrat::getGrade() const
 {
 	return (this->grade_);
 }
 
-void Bureaucrat::increment_grade()
+void Bureaucrat::incrementGrade()
 {
 	if (this->grade_ - 1 < 1)
 	{
@@ -69,7 +69,7 @@ void Bureaucrat::increment_grade()
 	this->grade_--;
 }
 
-void Bureaucrat::decrement_grade()
+void Bureaucrat::decrementGrade()
 {
 	if (this->grade_ + 1 > 150)
 	{
@@ -90,6 +90,6 @@ const char* Bureaucrat::GradeTooLowException::what() const noexcept
 
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& b)
 {
-	out << b.get_name() << ", bureaucrat grade " << b.get_grade() << ".";
+	out << b.getName() << ", bureaucrat grade " << b.getGrade() << ".";
 	return (out);
 }

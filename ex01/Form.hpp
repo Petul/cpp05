@@ -26,11 +26,11 @@ class Form
 	Form& operator=(const Form& o);
 	~Form();
 
-	std::string get_name() const;
-	int get_grade_to_sign() const;
-	int get_grade_to_execute() const;
-	bool get_signed() const;
-	void be_signed(const Bureaucrat& b);
+	std::string getName() const;
+	int getGradeToSign() const;
+	int getGradeToExecute() const;
+	bool getSigned() const;
+	void beSigned(const Bureaucrat& b);
 
 	class GradeTooHighException : public std::exception
 	{

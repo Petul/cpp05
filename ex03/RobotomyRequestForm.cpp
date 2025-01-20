@@ -47,7 +47,7 @@ RobotomyRequestForm::~RobotomyRequestForm()
 
 void RobotomyRequestForm::execute(Bureaucrat const& executor) const
 {
-	check_if_execution_possible(executor);
+	CheckIfExecutionPossible(executor);
 	std::cout << "*** Drilling noises ***\n";
 	srand(time(0));
 	if (std::rand() % 2)

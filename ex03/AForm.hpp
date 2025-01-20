@@ -26,12 +26,12 @@ class AForm
 	AForm& operator=(const AForm& o);
 	virtual ~AForm();
 
-	std::string get_name() const;
-	int get_grade_to_sign() const;
-	int get_grade_to_execute() const;
-	bool get_signed() const;
-	void be_signed(const Bureaucrat& b);
-	void check_if_execution_possible(Bureaucrat const& executor) const;
+	std::string getName() const;
+	int getGradeToSign() const;
+	int getGradeToExecute() const;
+	bool getSigned() const;
+	void beSigned(const Bureaucrat& b);
+	void CheckIfExecutionPossible(Bureaucrat const& executor) const;
 	virtual void execute(Bureaucrat const& executor) const = 0;
 
 	class GradeTooHighException : public std::exception

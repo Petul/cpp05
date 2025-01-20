@@ -21,7 +21,7 @@ int main(void)
 
 		AForm* ppf = sam.makeForm("presidential pardon", "Bob");
 
-		joe.sign_form(*ppf);
+		joe.signForm(*ppf);
 		joe.executeForm(*ppf);
 
 		delete ppf;
@@ -33,7 +33,7 @@ int main(void)
 
 		AForm* rrf = sam.makeForm("robotomy request", "Bob");
 
-		joe.sign_form(*rrf);
+		joe.signForm(*rrf);
 		joe.executeForm(*rrf);
 
 		delete rrf;
@@ -45,7 +45,7 @@ int main(void)
 
 		AForm* scf = sam.makeForm("shrubbery creation", "Bob");
 
-		joe.sign_form(*scf);
+		joe.signForm(*scf);
 		joe.executeForm(*scf);
 
 		delete scf;

@@ -64,42 +64,42 @@ AForm::~AForm()
 {
 }
 
-std::string AForm::get_name() const
+std::string AForm::getName() const
 {
 	return (this->name_);
 }
 
-int AForm::get_grade_to_sign() const
+int AForm::getGradeToSign() const
 {
 	return (this->grade_to_sign_);
 }
 
-int AForm::get_grade_to_execute() const
+int AForm::getGradeToExecute() const
 {
 	return (this->grade_to_execute_);
 }
 
-bool AForm::get_signed() const
+bool AForm::getSigned() const
 {
 	return (this->signed_);
 }
 
-void AForm::be_signed(const Bureaucrat& b)
+void AForm::beSigned(const Bureaucrat& b)
 {
-	if (b.get_grade() > this->grade_to_sign_)
+	if (b.getGrade() > this->grade_to_sign_)
 	{
 		throw GradeTooLowException();
 	}
 	this->signed_ = true;
 }
 
-void AForm::check_if_execution_possible(Bureaucrat const& executor) const
+void AForm::CheckIfExecutionPossible(Bureaucrat const& executor) const
 {
-	if (!this->get_signed())
+	if (!this->getSigned())
 	{
 		throw AForm::FormNotSignedException();
 	}
-	if (executor.get_grade() > this->get_grade_to_execute())
+	if (executor.getGrade() > this->getGradeToExecute())
 	{
 		throw AForm::GradeTooLowException();
 	}
@@ -122,9 +122,9 @@ const char* AForm::FormNotSignedException::what() const noexcept
 
 std::ostream& operator<<(std::ostream& out, const AForm& f)
 {
-	out << "Form name: " << f.get_name()
-	    << "\nGrade to sign: " << f.get_grade_to_sign()
-	    << "\nGrade to execute: " << f.get_grade_to_execute()
-	    << "\nIs signed: " << f.get_signed();
+	out << "Form name: " << f.getName()
+	    << "\nGrade to sign: " << f.getGradeToSign()
+	    << "\nGrade to execute: " << f.getGradeToExecute()
+	    << "\nIs signed: " << f.getSigned();
 	return (out);
 }

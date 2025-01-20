@@ -46,7 +46,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 void ShrubberyCreationForm::execute(Bureaucrat const& executor) const
 {
-	check_if_execution_possible(executor);
+	CheckIfExecutionPossible(executor);
 	std::ofstream of{this->target_ + "_shrubbery"};
 	for (int i = 0; i < 5; i++)
 	{

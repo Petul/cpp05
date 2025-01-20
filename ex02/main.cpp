@@ -24,7 +24,7 @@ int main(void)
 		Bureaucrat joe("Joe", 1);
 
 		ShrubberyCreationForm f("home");
-		joe.sign_form(f);
+		joe.signForm(f);
 		joe.executeForm(f);
 	}
 
@@ -32,7 +32,7 @@ int main(void)
 		Bureaucrat sam("Sam", 146);
 
 		ShrubberyCreationForm f("home");
-		sam.sign_form(f);
+		sam.signForm(f);
 		sam.executeForm(f);
 	}
 
@@ -40,21 +40,21 @@ int main(void)
 		Bureaucrat bob("Bob", 138);
 
 		ShrubberyCreationForm f("home");
-		bob.sign_form(f);
+		bob.signForm(f);
 		bob.executeForm(f);
 	}
 	{
 		Bureaucrat foo("Foo", 40);
 
 		RobotomyRequestForm f("Joe");
-		foo.sign_form(f);
+		foo.signForm(f);
 		foo.executeForm(f);
 	}
 	{
 		Bureaucrat mark("Mark", 1);
 
 		PresidentialPardonForm f("Bob");
-		mark.sign_form(f);
+		mark.signForm(f);
 		mark.executeForm(f);
 	}
 }

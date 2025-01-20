@@ -23,7 +23,7 @@ int main(void)
 		std::cout << foo << std::endl;
 		try
 		{
-			foo.increment_grade();
+			foo.incrementGrade();
 		}
 		catch (std::exception& e)
 		{
@@ -37,9 +37,9 @@ int main(void)
 		std::cout << foo << std::endl;
 		try
 		{
-			foo.increment_grade();
-			foo.decrement_grade();
-			foo.decrement_grade();
+			foo.incrementGrade();
+			foo.decrementGrade();
+			foo.decrementGrade();
 		}
 		catch (std::exception& e)
 		{

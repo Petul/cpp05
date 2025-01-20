@@ -46,7 +46,7 @@ PresidentialPardonForm::~PresidentialPardonForm()
 
 void PresidentialPardonForm::execute(Bureaucrat const& executor) const
 {
-	check_if_execution_possible(executor);
+	CheckIfExecutionPossible(executor);
 	std::cout << this->target_ << " has been pardoned by Zaphod Beeblebrox."
 	          << std::endl;
 }

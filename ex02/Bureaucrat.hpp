@@ -26,11 +26,11 @@ class Bureaucrat
 	Bureaucrat& operator=(const Bureaucrat&);
 	~Bureaucrat();
 
-	std::string get_name() const;
-	int get_grade() const;
-	void increment_grade();
-	void decrement_grade();
-	void sign_form(AForm& f);
+	std::string getName() const;
+	int getGrade() const;
+	void incrementGrade();
+	void decrementGrade();
+	void signForm(AForm& f);
 	void executeForm(AForm const& f);
 
 	class GradeTooHighException : public std::exception
